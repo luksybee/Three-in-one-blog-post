@@ -6,9 +6,6 @@ import { join } from 'path';
 import { PersonModule } from './person/person.module';
 import { HobbyModule } from './hobby/hobby.module';
 
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-
 @Module({
   imports: [
     MongooseModule.forRoot('mongodb://localhost:27017/three-in-one-db'),
@@ -21,7 +18,7 @@ import { AppService } from './app.service';
     PersonModule,
     HobbyModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}

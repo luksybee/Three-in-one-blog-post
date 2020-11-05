@@ -10,12 +10,10 @@ import { Types } from 'mongoose';
 
 import { Person, PersonDocument } from './person.model';
 import { PersonService } from './person.service';
-import {
-  CreatePersonInput,
-  ListPersonInput,
-  UpdatePersonInput,
-} from './person.inputs';
 import { Hobby } from '../hobby/hobby.model';
+import { CreatePersonInput } from './dto/createPersonInput.dto';
+import { ListPersonInput } from './dto/listPersonInput.dto';
+import { UpdatePersonInput } from './dto/updatePersonInput.dto';
 
 @Resolver(() => Person)
 export class PersonResolver {

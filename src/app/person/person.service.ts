@@ -1,13 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
+import { CreatePersonInput } from './dto/createPersonInput.dto';
+import { ListPersonInput } from './dto/listPersonInput.dto';
+import { UpdatePersonInput } from './dto/updatePersonInput.dto';
 
 import { Person, PersonDocument } from './person.model';
-import {
-  CreatePersonInput,
-  ListPersonInput,
-  UpdatePersonInput,
-} from './person.inputs';
 
 @Injectable()
 export class PersonService {
